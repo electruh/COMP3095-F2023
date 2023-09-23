@@ -1,10 +1,9 @@
-package ca.gbc.productservice.model;
+package ca.gbc.productservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 
@@ -12,13 +11,12 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(value = "product")
 
-public class Product {
+public class ProductRequest {
 
-    private String id;
     private String name;
     private String description;
     private BigDecimal price;
+
 
 }
